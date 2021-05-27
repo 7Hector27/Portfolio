@@ -26,18 +26,16 @@
 }
 
 #about {
-  padding-top: 10%;
+  padding-top: 8%;
+  padding-bottom: 8%;
   padding-left: 15%;
   background-color: red;
 }
-#experience {
-  padding-top: 5%;
-  padding-left: 25%;
-  background-color: #123131;
-}
+
 #contact {
   background-color: #484848;
   text-align: center;
+  height: 650px;
 }
 
 /* home section */
@@ -66,78 +64,84 @@
   padding-left: 20%;
 }
 #about-description {
+  padding-top: 10%;
   font-size: 1.2em;
 }
 
 /* experience*/
-ul {
-  list-style-type: none; /* Remove bullets */
-  padding: 0; /* Remove padding */
-  margin: 0; /* Remove margins */
+#experience {
+  padding-top: 5%;
+  padding-bottom: 300px;
 }
 
-.project-list:nth-child(odd) {
-  padding-bottom: 200px;
-  display: flex;
-  align-items: flex-start;
-}
-.project-list:nth-child(even) {
-  padding-bottom: 200px;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: row-reverse;
-}
 #experience-title {
   font-size: 3.5em;
   margin-bottom: 40px;
   padding-left: 25%;
 }
 
-.project-image {
-  display: block;
+ul {
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margins */
 }
 
-li:nth-child(odd) .project-title {
-  color: white;
-  font-size: 2.5em;
-  text-align: center;
+.card {
+  color: black;
+  background-size: cover;
+  padding: 8rem 0 0;
+  max-width: 35ch;
+  border-radius: 0.5rem;
+  overflow: hidden;
+
+  transition: transform 500ms ease;
 }
-li:nth-child(even) .project-title {
-  text-align: center;
-  color: red;
-  font-size: 2em;
+.card:hover {
+  transform: scale(1.05);
 }
-li:nth-child(odd) .project-description p {
-  color: white;
-  font-size: 1.15em;
-  width: 500px;
-  margin: 10px;
-  background-color: #036161;
-  background-clip: border-box;
-  border-radius: 15px;
-  padding: 13px;
-}
-li:nth-child(even) .project-description p {
-  color: white;
-  font-size: 1.15em;
-  width: 500px;
-  margin: 10px;
-  background-color: #036161;
-  background-clip: border-box;
-  border-radius: 15px;
-  padding: 13px;
-}
-li:nth-child(odd) .project-image {
-  margin-left: -100px;
-  border-radius: 10px;
+.card-content {
+  --padding: 1.5rem;
+  padding: var(--padding);
+  background: linear-gradient(
+    hsl(0 0% 0% /0),
+    hsl(255 0% 0% /0.3) 20%,
+    hsl(0 0% 0% / 1)
+  );
 }
 
-li:nth-child(odd) .project-content {
-  z-index: 1;
+.card-title {
+  width: max-content;
+  position: relative;
+  font-size: 1.5em;
 }
+.card-title::after {
+  content: '';
+  position: absolute;
+  height: 4px;
+  left: calc(var(--padding) * -1);
+  bottom: 0;
+  width: calc(100% + var(--padding));
+  background: green;
+  transform: scaleX(0);
 
-li:nth-child(even) .project-image {
+  transition: transform 500ms ease;
 }
-
-li:nth-child(even) .project-content {
+.card:hover .card-title:after {
+  transform: scaleX(1);
+}
+.card-body {
+  color: rgba(255 255 255 / 0.8);
+}
+body {
+  display: grid;
+  min-height: 100vh;
+}
+.button {
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  background: cornflowerblue;
+  padding: 0.5rm 1.25em;
+  border-radius: 0.25em;
 }

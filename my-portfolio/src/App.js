@@ -3,7 +3,7 @@ import React from 'react';
 import {
   Navbar,
   Nav,
-  Form,
+  Card,
   FormControl,
   NavDropdown,
   Container,
@@ -69,62 +69,25 @@ const App = () => {
         </section>
         <section id='experience'>
           <div id='experience-title'>Experience</div>
-          <ul>
-            <li class='project-list'>
-              <div class='project-content'>
-                <h3 class='project-title'>
-                  <a>Title</a>
-                </h3>
-                <div class='project-description'>
-                  <p>
-                    this is where the project description goesthis is where the
-                    project description goesthis is where the project
-                    description goesthis is where the project description
-                    goesthis is where the project description goesthis is where
-                    the project description goesthis is where the project
-                    description goes
-                  </p>
-                </div>
-                <ul>
-                  <li>things it uses 1</li>
-                  <li>things it uses 2</li>
-                  <li>things it uses 3</li>
-                </ul>
-              </div>
 
-              <div class='project-image'>
-                <a href='https://i.ytimg.com/vi/TwYKwaEjJd4/maxresdefault.jpg'>
-                  <img
-                    src='https://i.ytimg.com/vi/TwYKwaEjJd4/maxresdefault.jpg'
-                    width='700vw'
-                  ></img>
-                </a>
+          <Card style={{ width: '18rem' }}>
+            <Card.Img
+              variant='top'
+              src='https://www.springboard.com/library/static/5c973217aa9d6c0ef28f57438d9a2d0f/c68a4/10-08-how-to-build-a-data-scientist-portfolio.png'
+            />
+            <Card.Body>
+              <div class='card-content'>
+                <Card.Title class='card-title'>Portfolio</Card.Title>
+                <Card.Text class='card-body'>
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </Card.Text>
+                <Button variant='dark' class='button'>
+                  Learn More
+                </Button>
               </div>
-            </li>
-            <li class='project-list'>
-              <div class='project-content'>
-                <h3 class='project-title'>
-                  <a>Title</a>
-                </h3>
-                <div class='project-description'>
-                  <p>this is where the project description goes</p>
-                </div>
-                <ul>
-                  <li>R</li>
-                  <li>things it uses 2</li>
-                  <li>things it uses 3</li>
-                </ul>
-              </div>
-              <div class='project-image'>
-                <a href='https://i.ytimg.com/vi/TwYKwaEjJd4/maxresdefault.jpg'>
-                  <img
-                    src='https://i.ytimg.com/vi/TwYKwaEjJd4/maxresdefault.jpg'
-                    width='700'
-                  ></img>
-                </a>
-              </div>
-            </li>
-          </ul>
+            </Card.Body>
+          </Card>
         </section>
         <section id='contact'>
           <div>Get in touch</div>
