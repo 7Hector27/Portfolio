@@ -44,57 +44,103 @@ const App = () => {
         </section>
         <section id='about'>
           <div id='about-me'>About Me </div>
+          <div class='about-content'>
+            <div>
+              <img
+                id='about-photo'
+                src={require('./resources/hector.jpg').default}
+                width='300'
+                height='300'
+              ></img>
+            </div>
+            <div id='about-description'>
+              <p>
+                Hello! my name is Hector Carbajal and I enjoy creating things
+                for others to use and enjoy. My interest in web development
+                started around 2018 when introduced to React. Ever since then my
+                passion for developing online applications has grown.
+              </p>
+              <p>
+                Fastforward to today, I focus on honing my development skills to
+                develope efficient and useful applications. I'm always looking
+                forward to learning new fun technologies to learn and implement
+                into my applications.
+              </p>
+            </div>
+          </div>
 
-          <Container>
-            <Row>
-              <Col>
-                <div id='about-description'>
-                  Hello! my name is Hector Carbajal and I enjoy creating things
-                  for others to use and enjoy. My interest in web development
-                  started around 2018 and every since my passion growth. Im
-                  always looking forward to learning new technologies to create
-                  the best website for my users.
-                </div>
-              </Col>
-              <Col>
-                <img
-                  id='about-photo'
-                  src={require('./resources/hector.jpg').default}
-                  width='350'
-                  height='350'
-                ></img>
-              </Col>
-            </Row>
-          </Container>
+          <div class='about-content2'>
+            <p>these are the technologies i am familiar with</p>
+            <ul class='about-list'>
+              <li>Javascript</li>
+              <li>Html</li>
+              <li>CSS</li>
+              <li>React</li>
+              <li>React.js</li>
+              <li>C++</li>
+              <li>Javascript</li>
+              <li>Html</li>
+              <li>CSS</li>
+            </ul>
+          </div>
         </section>
         <section id='experience'>
-          <div id='experience-title'>Experience</div>
+          <h3 id='experience-title'>Some Things I've Developed </h3>
 
-          <Card style={{ width: '18rem' }}>
-            <Card.Img
-              variant='top'
-              src='https://www.springboard.com/library/static/5c973217aa9d6c0ef28f57438d9a2d0f/c68a4/10-08-how-to-build-a-data-scientist-portfolio.png'
-            />
-            <Card.Body>
+          <div class='project-list'>
+            <div class='test'>
               <div class='card-content'>
-                <Card.Title class='card-title'>Portfolio</Card.Title>
-                <Card.Text class='card-body'>
+                <h2 class='card-title'>Portfolio</h2>
+                <p class='card-body'>
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
-                </Card.Text>
-                <Button variant='dark' class='button'>
-                  Learn More
-                </Button>
+                </p>
+                <button class='button'>
+                  <a href='https://github.com/7Hector27/Portfolio'>
+                    Learn More
+                  </a>
+                </button>
               </div>
-            </Card.Body>
-          </Card>
+            </div>
+            <div class='test'>
+              <div class='card-content'>
+                <h2 class='card-title'>Crypto Tracker</h2>
+                <p class='card-body'>
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <button class='button'>
+                  <a href='https://github.com/7Hector27/Portfolio'>
+                    Learn More
+                  </a>
+                </button>
+              </div>
+            </div>
+            <div class='test'>
+              <div class='card-content'>
+                <h2 class='card-title'>Dream Website</h2>
+                <p class='card-body'>
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <button class='button'>
+                  <a href='https://github.com/7Hector27/Portfolio'>
+                    Learn More
+                  </a>
+                </button>
+              </div>
+            </div>
+          </div>
         </section>
         <section id='contact'>
-          <div>Get in touch</div>
-          <p>
+          <div class='contact-title'>Get In Touch</div>
+          <p class='contact-content'>
             Im currently looking for new opportunities, my inbox is always
-            open.Please feel free to contact me if you have any questions
+            open.Please feel free to contact me if you have any questions.
           </p>
+          <button class='contact-button'>
+            <a href='mailto:Hector27c7@gmail.com'>Email Me</a>
+          </button>
         </section>
       </div>
     </div>
